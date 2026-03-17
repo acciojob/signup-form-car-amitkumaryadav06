@@ -10,17 +10,23 @@
 <body>
 	<!-- the entire body must be written by student -->
     <form method="post">
-		<label>Name:</label>
+		<label for="name">Name:</label>
 		<input type="text" id="name" placeholder="Name" required/>
 		<br>
-		<label>Email:</label>
+		<label for="email">Email:</label>
 		<input type="Email" id="email" placeholder="Email" required/>
 	      <br>
-		<label>Gender:</label>
-		<input type="Radio" id="gender_m, gender_f" name="gender" required/>
+		<label for="gender">Gender:</label>
+		<label for="gender">Male:</label>
+		<input type="Radio" id="gender_m" name="gender" required/>
+		<label for="gender">Female:</label>
+		<input type="Radio" id="gender_f" name="gender" required/>
 		<br>
-		<label>Car Brands:</label>
-		<input type="select"id="cars" placeholder="--Please choose an option--" required/>
+		<select placeholder="--Please choose an option--">
+			<option> TATA</option>
+			<option> SUZUKI</option>
+			<option>MAHINDRA </option>
+		</select>
 		<br>
 		<label>Age:</label>
 		<input type="Number" id="age" placeholder="age" required/>
