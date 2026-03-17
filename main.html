@@ -4,11 +4,43 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>HTML Signup Form</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+    <form method="post">
+		<label>Name:</label>
+		<input type="text" id="name" placeholder="Name" required/>
+		<br>
+		<label>Email:</label>
+		<input type="Email" id="email" placeholder="Email" required/>
+	      <br>
+		<label>Gender:</label>
+		<input type="Radio" id="gender_m, gender_f" name="gender" required/>
+		<br>
+		<label>Car Brands:</label>
+		<input type="select"id="cars" placeholder="--Please choose an option--" required/>
+		<br>
+		<label>Age:</label>
+		<input type="Number" id="age" placeholder="age" required/>
+		<br>
+		<label>DOB:</label>
+		<input type="date" id="dob" required/>
+		<br>
+		<label>Phone Number:</label>
+		<input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
+		<br>
+		<label>Password:</label>
+		<input type="Password" id="password" placeholder="Password" required/>
+		<br>
+		<label>I agree to the TOS</label>
+		<input type="checkbox" id="tos" required/>
+		<br>
+		<button>Submit</button>
+		
+	</form>
+	<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
